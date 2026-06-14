@@ -63,13 +63,30 @@ En **Herramientas → Complementos → AutoTranslate → Configuración**:
 
 ---
 
-## 🗣️ Pronunciación (opcional, recomendado)
+## 🗣️ Pronunciación automática (TTS) — sin complicaciones
 
-Este add-on **no** genera audio; se centra en la traducción. Para escuchar la pronunciación sin guardar archivos, añade a la plantilla de tu tipo de nota la etiqueta nativa de Anki, que funciona también en AnkiDroid:
+**Aclaración importante:** este add-on **solo traduce**, no genera ni guarda audio. Pero no lo necesita: Anki ya trae una **lectura en voz alta automática** que funciona en escritorio **y** en AnkiDroid, gratis y sin archivos. Se activa con una etiqueta en la plantilla de la tarjeta.
 
-```
-{{tts en_US:English}}
-```
+### Cómo activarla (una sola vez)
+
+1. Abre el **Explorador** (botón *Examinar*) → selecciona una tarjeta de tu mazo.
+2. Pulsa **Tarjetas…** (editor de plantillas).
+3. En la plantilla **Anverso** (Front), añade la etiqueta apuntando a tu campo de origen. Ejemplo para un campo llamado `English`:
+
+   ```
+   {{English}}
+   {{tts en_US:English}}
+   ```
+
+   - `en_US` = inglés de EE. UU. Cámbialo según el idioma (`en_GB`, `es_ES`, `fr_FR`, …).
+   - Reemplaza `English` por el nombre real de tu campo de origen.
+4. Guarda. Listo: al mostrarse la tarjeta, el dispositivo **lee el texto en voz alta solo**, en el PC y en el móvil.
+
+> Así tienes el combo completo y automático: **escribes solo el término → el botón rellena la traducción → la tarjeta se pronuncia sola**. Todo gratis y sin API keys.
+
+### ¿Quieres un archivo de audio guardado en su lugar?
+
+La etiqueta `{{tts}}` usa la voz del sistema (varía por dispositivo) y necesita ejecutarse en cada repaso. Si prefieres **guardar un MP3** con voz fija (offline, consistente), usa el add-on gratuito [HyperTTS](https://ankiweb.net/shared/info/111623432) con su servicio *Google Translate*. Eso sí: el audio solo se genera en el escritorio y pesa más. La etiqueta `{{tts}}` es lo más cómodo y ligero para la mayoría.
 
 ---
 
