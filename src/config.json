@@ -1,0 +1,10 @@
+{
+  "deck": "Mi Vocabulario",
+  "also_scan_notetype": "",
+  "source_lang": "en",
+  "target_lang": "es",
+  "field_pairs": [["English", "Español"], ["Front", "Back"]],
+  "menu_label": "Rellenar traducciones – AutoTranslate",
+  "request_delay_seconds": 0.3,
+  "overwrite_existing": false
+}
